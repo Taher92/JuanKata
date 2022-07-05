@@ -1,6 +1,10 @@
-type Team = {id: number; name: string};
-
-type specialization = {id: number; name: string};
+// type Team = {id: number; name: string};
+export interface Team
+{
+    id: number; name: string
+}
+// type specialization = {id: number; name: string};
+export interface specialization {id: number; name: string};
 
 export interface IEmployee{
     id: number;

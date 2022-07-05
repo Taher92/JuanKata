@@ -1,0 +1,12 @@
+<p>delete-employee works!</p>
+
+<div>
+    <div>firstName</div>
+    <div><input type="text" [(ngModel)]="currentEmployee.firstName" /></div>
+    <div>lastName</div>
+    <div><input type="text" [(ngModel)]="currentEmployee.lastName" /></div>
+    <div>email</div>
+    <div><input type="text" [(ngModel)]="currentEmployee.email" /></div>
+    
+    <input type="button" value="delete" (click)="delete()" />
+</div>

@@ -1,0 +1,30 @@
+<p>create-employee works!</p>
+
+   <div>
+     <div class="form-group col-sm-3">        
+        <div>firstName</div>
+        <div><input  class="form-control" type="text" [(ngModel)]="currentEmployee.firstName" /></div>
+        <div>lastName</div>
+        <div><input class="form-control" type="text" [(ngModel)]="currentEmployee.lastName" /></div>
+        <div>email</div>
+        <div><input class="form-control" type="text" [(ngModel)]="currentEmployee.email" /></div>
+
+           
+        <label for="team">team</label>
+        <select class="form-control" name="team" [(ngModel)]="currentEmployee.team">
+        
+           <option *ngFor="let team of teams" [ngValue]="team">
+               {{ team.name }}
+              </option>
+        </select>
+
+        <label for="team">Specialization</label>
+        <select class="form-control" name="specialization" [(ngModel)]="currentEmployee.specialization">
+        
+           <option *ngFor="let specialization of specializations" [ngValue]="specialization">
+               {{ specialization.name }}
+              </option>
+        </select>
+     </div>
+        <input type="button" value="save" (click)="save()" />
+   </div>       

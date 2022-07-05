@@ -1,1 +1,38 @@
 <p>employee-list works!</p>
+<h1>employee list works!</h1>
+
+<a class="btn btn-primary" routerLink="/employee-create">Add a new Employee</a>
+
+<table id="tableEmployee" class="table table-striped">
+    <thead>
+    <tr>
+      <!-- <th *ngFor = "let column of headers">
+        {{column}}
+      </th> -->
+      <th>Name</th>
+      <th>Email</th>      
+      <th>Spezialisierung</th>
+      <th>Team</th>
+      <th>Action</th>
+     </tr>
+    </thead>
+    <!-- <tr *ngFor = "let row of employees">
+      <td *ngFor = "let column of headers">
+        {{row[column]}}
+      </td>
+    </tr> -->
+    <tbody>
+    <tr *ngFor = "let employe of employees">
+        <td>{{ employe.firstName }}, {{ employe.lastName }} </td>
+        <td>{{ employe.email }}</td>
+        <td>{{ employe.specialization?.name }}</td>
+        <td>{{ employe.team?.name }}</td>
+        <td>
+            <!-- <button  class="button2" type="button">Edit</button> -->
+            <a class="btn btn-primary button2" routerLink="/employee-edit/{{employe.id}}">Edit</a>
+            <!-- <button class = "button3" type="button">Delete</button> -->
+            <a class="btn btn-danger" routerLink="/employee-delete/{{employe.id}}"> Delete</a>            
+        </td>       
+    </tr>
+    </tbody>
+  </table>

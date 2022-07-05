@@ -1,0 +1,130 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "firstName": "Taher",
+      "lastName": "Hendawi",
+      "email": "taher.hendawi@adesso.de",
+      "specialization": null,
+      "team": null
+    },
+    {
+      "id": 2,
+      "email": "juan.sullca-ayllon@adesso.de",
+      "firstName": "Juan",
+      "lastName": "sullca-ayllo",
+      "specialization": {
+        "id": 1,
+        "name": "Custom-Dev"
+      },
+      "team": {
+        "id": 1,
+        "name": "CC MS HAJ"
+      }
+    },
+    {
+      "id": 3,
+      "email": "arbnor.kelmendi@adesso.de",
+      "firstName": "Arbnor",
+      "lastName": "Kelmendi",
+      "specialization": {
+        "id": 2,
+        "name": "Power Platform"
+      },
+      "team": {
+        "id": 1,
+        "name": "CC MS HAJ"
+      }
+    },
+    {
+      "id": 4,
+      "email": "bijan.arjasbi@adesso.de",
+      "firstName": "Bijan",
+      "lastName": "Arjasbi",
+      "team": {
+        "id": 1,
+        "name": "CC MS HAJ"
+      }
+    },
+    {
+      "id": 5,
+      "email": "martin.toelk@adesso.de",
+      "firstName": "Martin",
+      "lastName": "Tölk",
+      "specialization": {
+        "id": 3,
+        "name": "CRM"
+      },
+      "team": {
+        "id": 1,
+        "name": "CC MS HAJ"
+      }
+    },
+    {
+      "id": 0.7689484600092225,
+      "firstName": "max5",
+      "lastName": "Musterman",
+      "email": "aa@aaa.com",
+      "specialization": {
+        "id": 3,
+        "name": "CRM"
+      },
+      "team": {
+        "id": 2,
+        "name": "CC MS BRE"
+      }
+    },
+    {
+      "id": 0.32407255610979857,
+      "firstName": "max6",
+      "lastName": "Musterman",
+      "email": "aa@aaa.com",
+      "team": {
+        "id": 1,
+        "name": "CC MS HAJ"
+      },
+      "specialization": {
+        "id": 1,
+        "name": "Custom-Dev"
+      }
+    },
+    {
+      "id": 0.9870034499566718,
+      "firstName": "max",
+      "lastName": "Musterman",
+      "email": "aa@aaa.com",
+      "specialization": {
+        "id": 2,
+        "name": "Power Platform"
+      },
+      "team": {
+        "id": 2,
+        "name": "CC MS BRE"
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": 1,
+      "name": "CC MS HAJ"
+    },
+    {
+      "id": 2,
+      "name": "CC MS BRE"
+    }
+  ],
+  "specializations": [
+    {
+      "id": 1,
+      "name": "Custom-Dev"
+    },
+    {
+      "id": 2,
+      "name": "Power Platform"
+    },
+    {
+      "id": 3,
+      "name": "CRM"
+    }
+  ]
+}

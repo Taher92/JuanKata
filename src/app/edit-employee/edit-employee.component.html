@@ -1,0 +1,34 @@
+<p>edit-employee works!</p>
+
+<div *ngIf="currentEmployee">
+
+    <div>
+        <div class="form-group col-sm-3">   
+
+        <div>firstName</div>
+        <div><input type="text" class="form-control" [(ngModel)]="currentEmployee.firstName" /></div>
+        <div>lastName</div>
+        <div><input type="text" class="form-control" [(ngModel)]="currentEmployee.lastName" /></div>
+        <div>email</div>
+        <div><input type="text" class="form-control" [(ngModel)]="currentEmployee.email" /></div>
+
+
+        <label for="team">team</label>
+        <select class="form-control" name="teamSelection" [ngModel]="currentEmployee" (ngModelChange)="updateTeam($event)">
+           <option  *ngFor="let team of teams" [ngValue]="team"> {{ team.name }}
+            <!-- [selected]="team.id==currentEmployee.team.id" -->
+              </option>
+        </select>
+
+        <label for="team">Specialization</label>
+        <select class="form-control" name="specialization" [(ngModel)]="currentEmployee.specialization">        
+           <option *ngFor="let specialization of specializations" [ngValue]="specialization">
+               {{ specialization.name }}
+              </option>
+        </select>
+    </div>
+        <input type="button" value="save" (click)="save()" />
+    </div>
+
+       
+</div>
