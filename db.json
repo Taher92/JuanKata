@@ -5,8 +5,14 @@
       "firstName": "Taher",
       "lastName": "Hendawi",
       "email": "taher.hendawi@adesso.de",
-      "specialization": null,
-      "team": null
+      "specialization": {
+        "id": 1,
+        "name": "Custom-Dev"
+      },
+      "team": {
+        "id": 1,
+        "name": "CC MS HAJ"
+      }
     },
     {
       "id": 2,
@@ -38,9 +44,13 @@
     },
     {
       "id": 4,
-      "email": "bijan.arjasbi@adesso.de",
       "firstName": "Bijan",
       "lastName": "Arjasbi",
+      "email": "bijan.arjasbi@adesso.de",
+      "specialization": {
+        "id": 4,
+        "name": "Competence Center Leiter"
+      },
       "team": {
         "id": 1,
         "name": "CC MS HAJ"
@@ -89,16 +99,16 @@
       }
     },
     {
-      "id": 0.9870034499566718,
-      "firstName": "max",
-      "lastName": "Musterman",
+      "id": 0.23662415890436428,
+      "firstName": "max8",
+      "lastName": "Musterman8",
       "email": "aa@aaa.com",
       "specialization": {
-        "id": 2,
-        "name": "Power Platform"
+        "id": 1,
+        "name": "CRM"
       },
       "team": {
-        "id": 2,
+        "id": 1,
         "name": "CC MS BRE"
       }
     }
@@ -125,6 +135,10 @@
     {
       "id": 3,
       "name": "CRM"
+    },
+    {
+      "id": 4,
+      "name": "Competence Center Leiter"
     }
   ]
 }

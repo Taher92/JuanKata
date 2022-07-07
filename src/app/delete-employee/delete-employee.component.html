@@ -1,12 +1,29 @@
 <p>delete-employee works!</p>
 
 <div>
+    <div class="form-group col-sm-3"> 
+
     <div>firstName</div>
-    <div><input type="text" [(ngModel)]="currentEmployee.firstName" /></div>
+    <div><input type="text" class="form-control" [(ngModel)]="currentEmployee.firstName" /></div>
     <div>lastName</div>
-    <div><input type="text" [(ngModel)]="currentEmployee.lastName" /></div>
+    <div><input type="text" class="form-control" [(ngModel)]="currentEmployee.lastName" /></div>
     <div>email</div>
-    <div><input type="text" [(ngModel)]="currentEmployee.email" /></div>
+    <div><input type="text" class="form-control" [(ngModel)]="currentEmployee.email" /></div>
+
+    <label for="team">team</label>
+    <select class="form-control" name="team" [(ngModel)]="currentEmployee.team.name">
+       <option  *ngFor="let team of teams" [value]="team.name"> {{ team.name }}
+        <!-- [selected]="team.id==currentEmployee.team.id" -->
+          </option>
+    </select>
+
+    <label for="team">Specialization</label>
+    <select class="form-control" name="specialization" [(ngModel)]="currentEmployee.specialization.name">        
+       <option *ngFor="let specialization of specializations" [value]="specialization.name">
+           {{ specialization.name }}
+          </option>
+    </select>
+</div>
     
-    <input type="button" value="delete" (click)="delete()" />
+    <input type="button" class="btn btn-danger" value="delete" (click)="delete()" />
 </div>

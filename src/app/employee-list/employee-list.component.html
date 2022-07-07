@@ -1,5 +1,6 @@
-<p>employee-list works!</p>
-<h1>employee list works!</h1>
+<!-- <p>employee-list works!</p> -->
+<!-- <h1>employee list works!</h1> -->
+<h1>Employee Management System</h1>
 
 <a class="btn btn-primary" routerLink="/employee-create">Add a new Employee</a>
 
@@ -29,7 +30,8 @@
         <td>{{ employe.team?.name }}</td>
         <td>
             <!-- <button  class="button2" type="button">Edit</button> -->
-            <a class="btn btn-primary button2" routerLink="/employee-edit/{{employe.id}}">Edit</a>
+            <!-- <a class="btn btn-primary button2" routerLink="/employee-edit/{{employe.id}}">Edit</a> -->
+            <a class="btn btn-primary" routerLink="/employee-edit/{{employe.id}}">Edit</a>
             <!-- <button class = "button3" type="button">Delete</button> -->
             <a class="btn btn-danger" routerLink="/employee-delete/{{employe.id}}"> Delete</a>            
         </td>       

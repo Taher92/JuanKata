@@ -14,20 +14,20 @@
 
 
         <label for="team">team</label>
-        <select class="form-control" name="teamSelection" [ngModel]="currentEmployee" (ngModelChange)="updateTeam($event)">
-           <option  *ngFor="let team of teams" [ngValue]="team"> {{ team.name }}
+        <select class="form-control" name="team" [(ngModel)]="currentEmployee.team.name">
+           <option  *ngFor="let team of teams" [value]="team.name"> {{ team.name }}
             <!-- [selected]="team.id==currentEmployee.team.id" -->
               </option>
         </select>
 
         <label for="team">Specialization</label>
-        <select class="form-control" name="specialization" [(ngModel)]="currentEmployee.specialization">        
-           <option *ngFor="let specialization of specializations" [ngValue]="specialization">
+        <select class="form-control" name="specialization" [(ngModel)]="currentEmployee.specialization.name">        
+           <option *ngFor="let specialization of specializations" [value]="specialization.name">
                {{ specialization.name }}
               </option>
         </select>
     </div>
-        <input type="button" value="save" (click)="save()" />
+        <input type="button"  class="btn btn-primary" value="save" (click)="save()" />
     </div>
 
        
